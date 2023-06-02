@@ -11,7 +11,7 @@
         top_speed: "340 Km/h",
         zero_aos_cem: "3,2 segundos",
         peso: "1700 kg",
-        SUV_true: false,
+        tipo_de_carro: "Supercarro",
         path_name: "superleggera",
     }
     coleção.push(superleggera);
@@ -28,7 +28,7 @@
         top_speed: "291 Km/h",
         zero_aos_cem: "4,3 segundos",
         peso: "2240 kg",
-        SUV_true: true,
+        tipo_de_carro: "SUV",
         path_name: "dbx",
     }
     coleção.push(dbx);
@@ -45,7 +45,7 @@
         top_speed: "315 Km/h",
         zero_aos_cem: "3,5 segundos",
         peso: "1630 kg",
-        SUV_true: false,
+        tipo_de_carro: "Supercarro",
         path_name: "vantage",
     }
     coleção.push(vantage);   
@@ -62,7 +62,7 @@
         top_speed: "306 Km/h",
         zero_aos_cem: "4,4 segundos",
         peso: "2450 kg",
-        SUV_true: true,
+        tipo_de_carro: "SUV",
         path_name: "bentayga",
     }
     coleção.push(bentayga);
@@ -79,13 +79,13 @@
         top_speed: "333 Km/h",
         zero_aos_cem: "3,3 segundos",
         peso: "2270 kg",
-        SUV_true: false,
+        tipo_de_carro: "Luxo",
         path_name: "continental",
     }
     coleção.push(continental);
 
 
-    //BENTLEY CONTINENTAL GT SPECS
+    //BENTLEY FLYING SPUR SPECS
     const flying_spur = {
         marca: "Bentley",
         modelo: "Flying Spur",
@@ -96,7 +96,7 @@
         top_speed: "318 Km/h",
         zero_aos_cem: "3,7 segundos",
         peso: "2480 kg",
-        SUV_true: false,
+        tipo_de_carro: "Luxo",
         path_name: "flying_spur",
     }
     coleção.push(flying_spur);
@@ -113,7 +113,7 @@
         top_speed: "482 Km/h",
         zero_aos_cem: "2,5 segundos",
         peso: "2000 kg",
-        SUV_true: false,
+        tipo_de_carro: "Supercarro",
         path_name: "chiron_300",
     }
     coleção.push(chiron);
@@ -130,7 +130,7 @@
         top_speed: "415 Km/h",
         zero_aos_cem: "2,6 segundos",
         peso: "1900 kg",
-        SUV_true: false,
+        tipo_de_carro: "Supercarro",
         path_name: "veyron",
     }
     coleção.push(veyron);
@@ -147,7 +147,7 @@
         top_speed: "380 Km/h",
         zero_aos_cem: "2,4 segundos",
         peso: "1700 kg",
-        SUV_true: false,
+        tipo_de_carro: "Supercarro",
         path_name: "centodieci",
     }
     coleção.push(centodieci);
@@ -164,7 +164,7 @@
         top_speed: "340 Km/h",
         zero_aos_cem: "2,9 segundos",
         peso: "1300 kg",
-        SUV_true: false,
+        tipo_de_carro: "Supercarro",
         path_name: "488_pista",
     }
     coleção.push(_488pista);
@@ -181,7 +181,7 @@
         top_speed: "340 Km/h",
         zero_aos_cem: "2,9 segundos",
         peso: "1530 kg",
-        SUV_true: false,
+        tipo_de_carro: "Supercarro",
         path_name: "812_competizione",
     }
     coleção.push(_812competizione);
@@ -198,7 +198,7 @@
         top_speed: "340 Km/h",
         zero_aos_cem: "2,9 segundos",
         peso: "1530 kg",
-        SUV_true: false,
+        tipo_de_carro: "Supercarro",
         path_name: "fxx-k_evo",
     }
     coleção.push(fxx_k_evo);
@@ -215,7 +215,7 @@
         top_speed: "350 Km/h",
         zero_aos_cem: "2,8 segundos",
         peso: "1750 kg",
-        SUV_true: false,
+        tipo_de_carro: "Supercarro",
         path_name: "aventador_svj",
     }
     coleção.push(svj);
@@ -232,7 +232,7 @@
         top_speed: "305 Km/h",
         zero_aos_cem: "3,6 segundos",
         peso: "2200 kg",
-        SUV_true: true,
+        tipo_de_carro: "SUV",
         path_name: "urus",
     }
     coleção.push(urus);
@@ -249,7 +249,7 @@
         top_speed: "345 Km/h",
         zero_aos_cem: "3,2 segundos",
         peso: "1600 kg",
-        SUV_true: false,
+        tipo_de_carro: "Supercarro",
         path_name: "murcielago",
     }
     coleção.push(murcielago);
@@ -266,7 +266,7 @@
         top_speed: "300 Km/h",
         zero_aos_cem: "4,7 segundos",
         peso: "1880 kg",
-        SUV_true: false,
+        tipo_de_carro: "Supercarro",
         path_name: "granturismo",
     }
     coleção.push(granturismo);
@@ -283,7 +283,7 @@
         top_speed: "300 Km/h",
         zero_aos_cem: "3,7 segundos",
         peso: "2170 kg",
-        SUV_true: true,
+        tipo_de_carro: "SUV",
         path_name: "levante",
     }
     coleção.push(levante);
@@ -300,7 +300,7 @@
         top_speed: "325 Km/h",
         zero_aos_cem: "2,9 segundos",
         peso: "1500 kg",
-        SUV_true: false,
+        tipo_de_carro: "Supercarro",
         path_name: "mc20",
     }
     coleção.push(mc20);
@@ -317,7 +317,7 @@
         top_speed: "330 Km/h",
         zero_aos_cem: "2,7 segundos",
         peso: "1340 kg",
-        SUV_true: false,
+        tipo_de_carro: "Supercarro",
         path_name: "765lt",
     }
     coleção.push(_765lt);
@@ -334,7 +334,7 @@
         top_speed: "350 Km/h",
         zero_aos_cem: "2,7 segundos",
         peso: "1550 kg",
-        SUV_true: false,
+        tipo_de_carro: "Supercarro",
         path_name: "p1",
     }
     coleção.push(p1);
@@ -351,7 +351,7 @@
         top_speed: "340 Km/h",
         zero_aos_cem: "2,8 segundos",
         peso: "1180 kg",
-        SUV_true: false,
+        tipo_de_carro: "Supercarro",
         path_name: "senna_gtr",
     }
     coleção.push(senna);
@@ -368,7 +368,7 @@
         top_speed: "350 Km/h",
         zero_aos_cem: "2,6 segundos",
         peso: "1700 kg",
-        SUV_true: false,
+        tipo_de_carro: "Supercarro",
         path_name: "amg_one",
     }
     coleção.push(amg_one);
@@ -385,7 +385,7 @@
         top_speed: "240 Km/h",
         zero_aos_cem: "4,4 segundos",
         peso: "2650 kg",
-        SUV_true: true,
+        tipo_de_carro: "SUV",
         path_name: "g_wagon",
     }
     coleção.push(g_wagon);
@@ -402,7 +402,7 @@
         top_speed: "325 Km/h",
         zero_aos_cem: "3,1 segundos",
         peso: "1775 kg",
-        SUV_true: false,
+        tipo_de_carro: "Supercarro",
         path_name: "BS",
     }
     coleção.push(bs);
@@ -419,7 +419,7 @@
         top_speed: "320 Km/h",
         zero_aos_cem: "2,8 segundos",
         peso: "1400 kg",
-        SUV_true: false,
+        tipo_de_carro: "Supercarro",
         path_name: "zonda",
     }
     coleção.push(zonda);
@@ -436,7 +436,7 @@
         top_speed: "385 Km/h",
         zero_aos_cem: "2,8 segundos",
         peso: "1050 kg",
-        SUV_true: false,
+        tipo_de_carro: "Supercarro",
         path_name: "huayra",
     }
     coleção.push(huayra);
@@ -453,7 +453,7 @@
         top_speed: "355 Km/h",
         zero_aos_cem: "3,0 segundos",
         peso: "1280 kg",
-        SUV_true: false,
+        tipo_de_carro: "Supercarro",
         path_name: "utopia",
     }
     coleção.push(utopia);
@@ -470,7 +470,7 @@
         top_speed: "270 Km/h",
         zero_aos_cem: "4,3 segundos",
         peso: "1950 kg",
-        SUV_true: true,
+        tipo_de_carro: "SUV",
         path_name: "macan",
     }
     coleção.push(macan);
@@ -487,7 +487,7 @@
         top_speed: "305 Km/h",
         zero_aos_cem: "3,2 segundos",
         peso: "1450 kg",
-        SUV_true: false,
+        tipo_de_carro: "Supercarro",
         path_name: "gt3rs",
     }
     coleção.push(gt3rs);
@@ -504,7 +504,7 @@
         top_speed: "260 Km/h",
         zero_aos_cem: "2,6 segundos",
         peso: "2320 kg",
-        SUV_true: false,
+        tipo_de_carro: "Supercarro",
         path_name: "taycan",
     }
     coleção.push(taycan);
@@ -521,7 +521,7 @@
         top_speed: "250 Km/h",
         zero_aos_cem: "4,4 segundos",
         peso: "2440 kg",
-        SUV_true: false,
+        tipo_de_carro: "Luxo",
         path_name: "wraith",
     }
     coleção.push(wraith);
@@ -538,7 +538,7 @@
         top_speed: "250 Km/h",
         zero_aos_cem: "5,1 segundos",
         peso: "2745 kg",
-        SUV_true: false,
+        tipo_de_carro: "Luxo",
         path_name: "phantom",
     }
     coleção.push(phantom); 
@@ -555,7 +555,7 @@
         top_speed: "250 Km/h",
         zero_aos_cem: "5,1 segundos",
         peso: "2745 kg",
-        SUV_true: true,
+        tipo_de_carro: "SUV",
         path_name: "cullinan",
     }
     coleção.push(cullinan); 
@@ -574,7 +574,7 @@
         if (lista_de_modelos.value == '') {
             input2.disabled = true;
             input2.value = "";
-            datalist_modelos.innerHTML = ''; // Clear existing options
+            datalist_modelos.innerHTML = '';
             return;
         }
         
@@ -594,9 +594,7 @@
     {
         var lista_de_modelos = document.getElementById("input1");
         var input2 = document.getElementById("input2");
-        var datalist_modelos = document.getElementById("datalist_modelos");
-        // var motor_ = document.getElementsByName("rad");
-        var SUV_ = document.getElementById("is_SUV");
+        var tipo_de_carro = document.getElementById("classes_carro");
         var table = document.getElementById("show_filtro");
 
         table.innerHTML = "";
@@ -605,7 +603,31 @@
             var motor_eletrico = document.getElementById("eletrico");
             var motor_list = [motor_combustao, motor_eletrico];
                 motor_checked = motor_list.find((item) => item.checked == true );
-            if (carro.marca == lista_de_modelos.value && carro.modelo == "")// && carro.SUV == "" && carro.tipo_do_motor == "")
+            
+            if (lista_de_modelos.value != "" && carro.marca != lista_de_modelos.value) {
+                return;
+            }
+
+            if (input2.value != "" && carro.modelo != input2.value) {
+                return;
+            }
+
+            if (motor_checked != undefined && carro.motor != motor_checked.value){
+                return;
+            }
+            
+            if (tipo_de_carro.value != "" && carro.tipo_de_carro != tipo_de_carro.value) {
+                return;
+            }
+
+            var table = document.getElementById("show_filtro");
+                var newRow = document.createElement("tr");
+                var image = document.createElement("img");
+                image.src = "Imagens/carros/" + lista_de_modelos.value + "/" + carro.path_name + ".jpg";
+                newRow.appendChild(image);
+                table.appendChild(newRow);
+
+            /* if (carro.marca == lista_de_modelos.value && carro.modelo == "")// && carro.SUV == "" && carro.tipo_do_motor == "")
             {
                 var table = document.getElementById("show_filtro");
                 var newRow = document.createElement("tr");
@@ -633,8 +655,6 @@
                 table.appendChild(newRow);
             } else {
                 console.log("erro!");
-            }
-
+            } */
         })
     }
-    

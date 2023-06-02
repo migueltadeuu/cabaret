@@ -47,7 +47,7 @@
         <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><p style="color: aliceblue; font-size: 18px; text-align: center;" >Our Social Media:</p>
         <div class="social_media">
           <ul>
-            <a href="https://instagram.com/migueltadeuu" target="_blank" rel="noopener noreferrer"><img src="imagens/Instagram_logo_2022.svg.png" style="width:28px;height:28px;"></a>
+            <a href="https://instagram.com/migueltadeuu" target="_blank" rel="noopener noreferrer"><img src="Imagens/Instagram_logo_2022.svg.png" style="width:28px;height:28px;"></a>
           </ul>
         </div>
       </div>
@@ -83,9 +83,16 @@
             <label for="elétrico" style="color: white; font-size: 20px;">Elétrico</label><br><br>
 
         
-            <label for="is_SUV" style="color: white; font-size: 30px;"><b>&nbsp;&nbsp;&nbsp;&nbsp;O veículo é um SUV?: </b></label><input type="checkbox" id="is_SUV" name="is_SUV" value="SUV_true" style="width: 25px; height: 25px;">
+            <b style="font-size: 30px;">&nbsp;&nbsp;&nbsp;&nbsp;Tipo de carro:</b> <select name="lista_tipo_de_carro" onchange="combo(this, 'demo')" style="visibility: hidden;"></select>
+            <input type="text" onchange="verificar_marca()" onkeypress="verificar_marca()" autocomplete="off" list="classes" id="classes_carro" name="classes" placeholder="Escolha um tipo de carro" style="width: 200px; height: 30px; margin-left: -10px; margin-top: 10px;">
+          <datalist id="classes" style=" position: absolute; background-color: white; border: 1px solid blue; border-radius: 0 0 5px 5px; border-top: none; font-family: sans-serif; width: 350px; padding: 5px;">
+              <option value="Supercarro">Supercarro</option>
+              <option value="SUV">SUV</option>
+              <option value="Luxo">Luxo</option>
+          </datalist></select><br>
 
-          <br><br><br><button onclick="aplicar_filtros()" style="margin-left: 550px; width: 120px; height: 35px;"><b style="font-size: 15px;">Aplicar filtros</b></button>
+
+          <br><br><button onclick="aplicar_filtros()" style="margin-left: 550px; width: 120px; height: 35px;"><b style="font-size: 15px;">Aplicar filtros</b></button>
       </div>
         <table id="show_filtro">
           
