@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cabaret - Test Drive</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"/>
+   </head>
+<body>
+  <div class="main_box" style="background: black;">
+    <input type="checkbox" id="check">
+      <div class="btn_onee">
+        <label for="check">
+          <i class="fas fa-bars"></i>
+        </label>
+     </div>
+     <div class="sidebar_menu">
+      <div class="logo">
+          <a href="sidebar_test.html"><img src="Imagens/logo_cabaret.png" style="width: 200px; height: 70px;"></a>
+      </div>
+      <div class="btn_two">
+          <label for="check">
+            <i class="fas fa-times"></i>
+          </label>
+        </div>
+        <div class="menu">
+          <ul><br>
+            <li>
+              <a href="sidebar_test.html">Home</a>
+            </li><br>
+            <li>
+              <a href="car_list.html">Specs room</a>
+            </li><br>
+            <li>
+              <a href="#">Test Drive</a>
+            </li><br>
+            <li>
+              <a href="about.html">About</a>
+            </li><br>
+            <li>
+              <a href="mailto:migueltadeu.17575@ae-danielsampaio.pt">Contact us</a>
+            </li>
+          </ul>
+        </div>
+        <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><p style="color: aliceblue; font-size: 18px; text-align: center;" >Our Social Media:</p>
+        <div class="social_media">
+          <ul>
+            <a href="https://instagram.com/migueltadeuu" target="_blank" rel="noopener noreferrer"><img src="imagens/Instagram_logo_2022.svg.png" style="width:28px;height:28px;"></a>
+          </ul>
+        </div>
+      </div>
+      <br><br><br><br><br><br><br><br><form style="border: 2px solid gainsboro; width: 45%; width: 800px; height: 350px; margin-left: auto; margin-right: auto;">
+        <div class="imputs">
+          <br>
+          <h2 style="color: aliceblue; text-align: center;">Marque já o seu Test-Drive!</h2><br>
+          <b style="color: aliceblue;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<u>Nome:</u>&nbsp;&nbsp;&nbsp;&nbsp;</b> <input type="text" name="nome" size="65" maxlength="60"><br><br>
+          <b style="color: aliceblue;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<u>Email:</u>&nbsp;&nbsp;&nbsp;&nbsp;</b> <input type="text" name="email" size="60" maxlength="65"> <br><br>
+          <b style="color: aliceblue;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<u>Escolha o carro que deseja:</u> &nbsp;&nbsp;&nbsp;&nbsp;Marca - </b> <select name="marcas" onChange="combo(this, 'demo')">
+            <datalist>
+              <option value="Aston Martin">Aston Martin</option>
+              <option value="Bentley">Bentley</option>
+              <option value="Bugatti">Bugatti</option>
+              <option value="Ferrari">Ferrari</option>
+              <option value="Lamborghini">Lamborghini</option>
+              <option value="Maserati">Maserati</option>
+              <option value="McLaren">McLaren</option>
+              <option value="Mercedes">Mercedes</option>
+              <option value="Pagani">Pagani</option>
+              <option value="Porsche">Porsche</option>
+              <option value="Rolls Royce">Rolls Royce</option>
+            </datalist></select>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <b style="color: aliceblue;">Modelo - </b><select name="modelos" onChange="combo(this, 'demo')">
+            <datalist>
+              <option>modelo 1</option>
+              <option>modelo 2</option>
+              <option>modelo 3</option>
+            </datalist></select>
+            <br>     
+          
+          <br><b style="color: aliceblue;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<u>Tipo de motor:</u> &nbsp;&nbsp;&nbsp;&nbsp;</b> <input type="radio" id="combustao" name="rad" value="combustao">
+          <label for="combustao" style="color: aliceblue;">Combustão&nbsp;&nbsp;&nbsp;&nbsp;</label>
+
+          <input type="radio" id="eletrico" name="rad" value="eletricoo">
+          <label for="eletrico" style="color: aliceblue;">Elétrico</label><br><br>
+          
+          <button style="margin-left: 620px; margin-top: 0px; width: 150px; height: 40px; font-size: 16px; font-family: Verdana, Geneva, Tahoma, sans-serif;"><b>Agende agora!</b></button>
+          
+          
+
+      </div>
+      </form>
+  </div>
+</body>
+</html>

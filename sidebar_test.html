@@ -6,6 +6,7 @@
     <title>Cabaret - Projeto Final</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"/>
+    <script src="scripts.js"></script>
    </head>
 <body>
   <div class="main_box">
@@ -17,7 +18,7 @@
      </div>
      <div class="sidebar_menu">
       <div class="logo">
-          <a href="horerer.html"><img src="Imagens/logo_cabaret.png" style="width: 200px; height: 70px;"></a>
+          <a href="sidebar_test.html"><img src="Imagens/logo_cabaret.png" style="width: 200px; height: 70px;"></a>
       </div>
       <div class="btn_two">
           <label for="check">
@@ -30,13 +31,13 @@
               <a href="sidebar_test.html">Home</a>
             </li><br>
             <li>
-              <a href="car_list.html">Car List</a>
+              <a href="car_list.html">Specs room</a>
             </li><br>
             <li>
-              <a href="#">Test Drive</a>
+              <a href="test_drive.html">Test Drive</a>
             </li><br>
             <li>
-              <a href="#">About</a>
+              <a href="about.html">About</a>
             </li><br>
             <li>
               <a href="mailto:migueltadeu.17575@ae-danielsampaio.pt">Contact us</a>
@@ -50,6 +51,102 @@
           </ul>
         </div>
       </div>
-    </div>
+      <br><br><br><br><br><div class="container" id="myContainer">
+        <h1 style="color: aliceblue;">Encontre o seu carro de sonho!</h1>
+        <p>Use os filtros para uma pesquisa mais detalhada</p>
+        <br><hr style="margin: auto; width: 95%; border-color: dimgrey;">
+        <br><b style="font-size: 30px; margin-top: 25px;">&nbsp;&nbsp;&nbsp;&nbsp;Marca:</b> <select name="lista_marcas" onkeypress="verificar_marca()" onchange="combo(this, 'demo')" style="visibility: hidden;">
+          <input type="text" onchange="verificar_marca()" onkeypress="verificar_marca()" autocomplete="off" list="marcas" id="input1" name="marcas" placeholder="Escolha uma marca" style="width: 200px; height: 30px; margin-left: -10px; margin-top: 10px;">
+          <datalist id="marcas" style=" position: absolute; background-color: white; border: 1px solid blue; border-radius: 0 0 5px 5px; border-top: none; font-family: sans-serif; width: 350px; padding: 5px;">
+              <option value="Aston Martin">Aston Martin</option>
+              <option value="Bentley">Bentley</option>
+              <option value="Bugatti">Bugatti</option>
+              <option value="Ferrari">Ferrari</option>
+              <option value="Lamborghini">Lamborghini</option>
+              <option value="Maserati">Maserati</option>
+              <option value="McLaren">McLaren</option>
+              <option value="Mercedes">Mercedes</option>
+              <option value="Pagani">Pagani</option>
+              <option value="Porsche">Porsche</option>
+              <option value="Rolls Royce">Rolls Royce</option>
+          </datalist></select><br>
+          <br><b style="font-size: 30px;">&nbsp;&nbsp;&nbsp;&nbsp;Modelo:</b> <select name="lista_modelos" onchange="combo(this, 'demo')" style="visibility: hidden;">
+            <input onchange="verificar_marca()" autocomplete="off" list="datalist_modelos" disabled="disabled" id="input2" name="modelos" placeholder="Escolha um modelo" style="width: 200px; height: 30px; margin-left: -10px; margin-top: 10px;">
+            <datalist id="datalist_modelos" style=" position: absolute; background-color: white; border: 1px solid blue; border-radius: 0 0 5px 5px; border-top: none; font-family: sans-serif; width: 350px; padding: 5px;">
+            </datalist></select><br> 
+            
+            <br><b style="font-size: 30px; color: white;">&nbsp;&nbsp;&nbsp;&nbsp;Tipo de motor: &nbsp;&nbsp;&nbsp;&nbsp;</b> 
+            <input type="radio" id="combustao" name="rad" value="Combustão">
+            <label for="combustao" style="color: white; font-size: 20px;">Combustão&nbsp;&nbsp;&nbsp;&nbsp;</label>
+  
+            <input type="radio" id="eletrico" name="rad" value="Elétrico">
+            <label for="elétrico" style="color: white; font-size: 20px;">Elétrico</label><br><br>
+
+        
+            <label for="is_SUV" style="color: white; font-size: 30px;"><b>&nbsp;&nbsp;&nbsp;&nbsp;O veículo é um SUV?: </b></label><input type="checkbox" id="is_SUV" name="is_SUV" value="SUV_true" style="width: 25px; height: 25px;">
+
+          <br><br><br><button onclick="aplicar_filtros()" style="margin-left: 550px; width: 120px; height: 35px;"><b style="font-size: 15px;">Aplicar filtros</b></button>
+      </div>
+        <table id="show_filtro">
+          
+        </table>
+
+
+      <!-- <br><br><br><p style="text-align: center; font-size: 60px; color: aliceblue; font-family: verdana;">Car List</p><br><hr style="width: 70%; margin: auto; border-color: darkgrey;"><br><br>
+        <p style="font-size: 50px; text-align: center; color: aliceblue;">Aston Martin</p><br>
+            <img src="Imagens/carros/Aston Martin/superleggera.jpg" style="margin-left: 55px; width: 480px; height: 270px;">
+            <img src="Imagens/carros/Aston Martin/dbx.jpg" style="margin-left: 20px; width: 480px; height: 270px;">
+            <img src="Imagens/carros/Aston Martin/vantage.jpg" style="margin-left: 20px; width: 480px; height: 270px;"><br>
+        <br><hr style="width: 85%; margin: auto; border-color: darkgrey;">
+            <p style="font-size: 50px; text-align: center; color: aliceblue;">Bentley</p><br>
+                <img src="Imagens/carros/Bentley/bentayga.jpg" style="margin-left: 55px; width: 480px; height: 270px;">
+                <img src="Imagens/carros/Bentley/continental.jpg" style="margin-left: 20px; width: 480px; height: 270px;">
+                <img src="Imagens/carros/Bentley/flying_spur.jpg" style="margin-left: 20px; width: 480px; height: 270px;"><br>
+        <br><hr style="width: 85%; margin: auto; border-color: darkgrey;">
+            <p style="font-size: 50px; text-align: center; color: aliceblue;">Bugatti</p><br>
+                <img src="Imagens/carros/Bugatti/chiron_300.jpg" style="margin-left: 55px; width: 480px; height: 270px;">
+                <img src="Imagens/carros/Bugatti/veyron.jpg" style="margin-left: 20px; width: 480px; height: 270px;">
+                <img src="Imagens/carros/Bugatti/centodieci.jpg" style="margin-left: 20px; width: 480px; height: 270px;"><br>
+        <br><hr style="width: 85%; margin: auto; border-color: darkgrey;">
+            <p style="font-size: 50px; text-align: center; color: aliceblue;">Ferrari</p><br>
+                <img src="Imagens/carros/Ferrari/488_pista.jpg" style="margin-left: 55px; width: 480px; height: 270px;">
+                <img src="Imagens/carros/Ferrari/812_competizione.jpg" style="margin-left: 20px; width: 480px; height: 270px;">
+                <img src="Imagens/carros/Ferrari/fxx-k_evo.jpg" style="margin-left: 20px; width: 480px; height: 270px;"><br>
+        <br><hr style="width: 85%; margin: auto; border-color: darkgrey;">
+            <p style="font-size: 50px; text-align: center; color: aliceblue;">Lamborghini</p><br>
+                <img src="Imagens/carros/Lamborghini/aventador_svj.jpg" style="margin-left: 55px; width: 480px; height: 270px;">
+                <img src="Imagens/carros/Lamborghini/urus.jpg" style="margin-left: 20px; width: 480px; height: 270px;">
+                <img src="Imagens/carros/Lamborghini/murcielago.jpg" style="margin-left: 20px; width: 480px; height: 270px;"><br>
+        <br><hr style="width: 85%; margin: auto; border-color: darkgrey;">
+            <p style="font-size: 50px; text-align: center; color: aliceblue;">Maserati</p><br>
+                <img src="Imagens/carros/Maserati/granturismo.jpg" style="margin-left: 55px; width: 480px; height: 270px;">
+                <img src="Imagens/carros/Maserati/maserati_suv.jpg" style="margin-left: 20px; width: 480px; height: 270px;">
+                <img src="Imagens/carros/Maserati/mc20.jpg" style="margin-left: 20px; width: 480px; height: 270px;"><br>
+        <br><hr style="width: 85%; margin: auto; border-color: darkgrey;">
+            <p style="font-size: 50px; text-align: center; color: aliceblue;">McLaren</p><br>
+                <img src="Imagens/carros/McLaren/765lt.jpg" style="margin-left: 55px; width: 480px; height: 270px;">
+                <img src="Imagens/carros/McLaren/P1.jpg" style="margin-left: 20px; width: 480px; height: 270px;">
+                <img src="Imagens/carros/McLaren/senna_gtr.jpg" style="margin-left: 20px; width: 480px; height: 270px;"><br>
+        <br><hr style="width: 85%; margin: auto; border-color: darkgrey;">
+            <p style="font-size: 50px; text-align: center; color: aliceblue;">Mercedes</p><br>
+                <img src="Imagens/carros/Mercedes/amg_one.jpg" style="margin-left: 55px; width: 480px; height: 270px;">
+                <img src="Imagens/carros/Mercedes/g_wagon.jpg" style="margin-left: 20px; width: 480px; height: 270px;">
+                <img src="Imagens/carros/Mercedes/BS.jpg" style="margin-left: 20px; width: 480px; height: 270px;"><br>
+        <br><hr style="width: 85%; margin: auto; border-color: darkgrey;">
+            <p style="font-size: 50px; text-align: center; color: aliceblue;">Pagani</p><br>
+                <img src="Imagens/carros/Pagani/zonda.jpg" style="margin-left: 55px; width: 480px; height: 270px;">
+                <img src="Imagens/carros/Pagani/huayra.jpg" style="margin-left: 20px; width: 480px; height: 270px;">
+                <img src="Imagens/carros/Pagani/utopia.jpg" style="margin-left: 20px; width: 480px; height: 270px;"><br>
+        <br><hr style="width: 85%; margin: auto; border-color: darkgrey;">
+            <p style="font-size: 50px; text-align: center; color: aliceblue;">Porsche</p><br>
+                <img src="Imagens/carros/Porsche/macan.jpg" style="margin-left: 55px; width: 480px; height: 270px;">
+                <img src="Imagens/carros/Porsche/gt3rs.jpg" style="margin-left: 20px; width: 480px; height: 270px;">
+                <img src="Imagens/carros/Porsche/taycan.jpg" style="margin-left: 20px; width: 480px; height: 270px;"><br>
+        <br><hr style="width: 85%; margin: auto; border-color: darkgrey;">
+            <p style="font-size: 50px; text-align: center; color: aliceblue;">Rolls Royce</p><br>
+                <img src="Imagens/carros/Rolls Royce/wraith.jpg" style="margin-left: 55px; width: 480px; height: 270px;">
+                <img src="Imagens/carros/Rolls Royce/phantom.jpg" style="margin-left: 20px; width: 480px; height: 270px;">
+                <img src="Imagens/carros/Rolls Royce/cullinan.jpg" style="margin-left: 20px; width: 480px; height: 270px;">
+    --></div>
   </body>
 </html>

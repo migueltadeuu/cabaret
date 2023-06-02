@@ -6,7 +6,8 @@
     <title>Cabaret - Projeto Final</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"/>
-   </head>
+    <script src="specs.js"></script>
+  </head>
 <body>
   <div class="main_box" style="background: black;">
     <input type="checkbox" id="check">
@@ -17,7 +18,7 @@
      </div>
      <div class="sidebar_menu">
       <div class="logo">
-          <a href="horerer.html"><img src="Imagens/logo_cabaret.png" style="width: 200px; height: 70px;"></a>
+          <a href="sidebar_test.html"><img src="Imagens/logo_cabaret.png" style="width: 200px; height: 70px;"></a>
       </div>
       <div class="btn_two">
           <label for="check">
@@ -30,13 +31,13 @@
               <a href="sidebar_test.html">Home</a>
             </li><br>
             <li>
-              <a href="car_list.html">Car List</a>
+              <a href="car_list.html">Specs room</a>
             </li><br>
             <li>
-              <a href="#">Test Drive</a>
+              <a href="test_drive.html">Test Drive</a>
             </li><br>
             <li>
-              <a href="#">About</a>
+              <a href="about.html">About</a>
             </li><br>
             <li>
               <a href="mailto:migueltadeu.17575@ae-danielsampaio.pt">Contact us</a>
@@ -50,20 +51,36 @@
           </ul>
         </div>
       </div>
-      <br><p style="text-align: center; font-size: 60px; color: aliceblue; font-family: verdana;">Car List</p><br><hr style="width: 70%; margin: auto; border-color: darkgrey;"><br><br>
+      <br><p style="text-align: center; font-size: 60px; color: aliceblue; font-family: verdana;">Specs room</p><br><hr style="width: 70%; margin: auto; border-color: darkgrey;"><br><br>
         <p style="font-size: 50px; text-align: center; color: aliceblue;">Aston Martin</p><br>
             <img src="Imagens/carros/Aston Martin/superleggera.jpg" style="margin-left: 55px; width: 480px; height: 270px;">
             <img src="Imagens/carros/Aston Martin/dbx.jpg" style="margin-left: 20px; width: 480px; height: 270px;">
             <img src="Imagens/carros/Aston Martin/vantage.jpg" style="margin-left: 20px; width: 480px; height: 270px;"><br>
-        <br><hr style="width: 85%; margin: auto; border-color: darkgrey;">
+            
+            <!-- DETALHES SUPERLEGGERA -->
+            <p style="color: aliceblue; margin-left: 55px;">Detalhes do carro:</p><br>
+            <p style="color: aliceblue; margin-left: 55px;">Marca: Aston Martin</p>
+            <p style="color: aliceblue; margin-left: 55px;">Modelo: Superleggera</p>
+            <p style="color: aliceblue; margin-left: 55px;">Motor: 5.2L V12 Twin-Turbo</p>
+            <p style="color: aliceblue; margin-left: 55px;">Cavalos: 715 HP</p>
+            <p style="color: aliceblue; margin-left: 55px;">Velocidade máxima: 340 km/h</p>
+            <p style="color: aliceblue; margin-left: 55px;">0 aos 100: 3,2 segundos</p>
+            <p style="color: aliceblue; margin-left: 55px;">Peso: 1700 kg</p>
+            <p style="color: aliceblue; margin-left: 55px;">É SUV?: Não</p>
+
+            <div id="output"></div>
+            
+            <br><hr style="width: 85%; margin: auto; border-color: darkgrey;">
             <p style="font-size: 50px; text-align: center; color: aliceblue;">Bentley</p><br>
                 <img src="Imagens/carros/Bentley/bentayga.jpg" style="margin-left: 55px; width: 480px; height: 270px;">
                 <img src="Imagens/carros/Bentley/continental.jpg" style="margin-left: 20px; width: 480px; height: 270px;">
                 <img src="Imagens/carros/Bentley/flying_spur.jpg" style="margin-left: 20px; width: 480px; height: 270px;"><br>
-        <br><hr style="width: 85%; margin: auto; border-color: darkgrey;">
+                
+        
+                <br><hr style="width: 85%; margin: auto; border-color: darkgrey;">
             <p style="font-size: 50px; text-align: center; color: aliceblue;">Bugatti</p><br>
                 <img src="Imagens/carros/Bugatti/chiron_300.jpg" style="margin-left: 55px; width: 480px; height: 270px;">
-                <img src="Imagens/carros/Bugatti/veyron.jpeg" style="margin-left: 20px; width: 480px; height: 270px;">
+                <img src="Imagens/carros/Bugatti/veyron.jpg" style="margin-left: 20px; width: 480px; height: 270px;">
                 <img src="Imagens/carros/Bugatti/centodieci.jpg" style="margin-left: 20px; width: 480px; height: 270px;"><br>
         <br><hr style="width: 85%; margin: auto; border-color: darkgrey;">
             <p style="font-size: 50px; text-align: center; color: aliceblue;">Ferrari</p><br>
@@ -89,7 +106,7 @@
             <p style="font-size: 50px; text-align: center; color: aliceblue;">Mercedes</p><br>
                 <img src="Imagens/carros/Mercedes/amg_one.jpg" style="margin-left: 55px; width: 480px; height: 270px;">
                 <img src="Imagens/carros/Mercedes/g_wagon.jpg" style="margin-left: 20px; width: 480px; height: 270px;">
-                <img src="Imagens/carros/Mercedes/BS.jpeg" style="margin-left: 20px; width: 480px; height: 270px;"><br>
+                <img src="Imagens/carros/Mercedes/BS.jpg" style="margin-left: 20px; width: 480px; height: 270px;"><br>
         <br><hr style="width: 85%; margin: auto; border-color: darkgrey;">
             <p style="font-size: 50px; text-align: center; color: aliceblue;">Pagani</p><br>
                 <img src="Imagens/carros/Pagani/zonda.jpg" style="margin-left: 55px; width: 480px; height: 270px;">
